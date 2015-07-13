@@ -2,11 +2,14 @@
 
 ## Introduction
 
-Groovy-Scriping makes it possible to run Groovy scripts in Apache Karaf with OSGi services.
-OSGi service instances are obtained from binding `scriptContext`: please see the example below.
+Groovy-Scriping makes it possible to run Groovy scripts in Apache Karaf with
+OSGi services. This component is mainly for diagnostic purposes. The purpose
+is to be able to quickly call and test APIs of the various OSGi services from
+Groovy scripts.
 
-This component is mainly for diagnostic purposes. The purpose is to be able
-to quickly call and test APIs of the various OSGi services from Groovy scripts.
+The variable `scriptContext` is bound to ScriptContext object. It has one
+purpose: to get OSGi services using the interface name. Please see
+the example below for usage.
 
 ## Getting Started
 
